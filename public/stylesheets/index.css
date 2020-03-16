@@ -1,0 +1,11 @@
+#recommendedImg{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.productList{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

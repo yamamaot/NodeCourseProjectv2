@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electronics Store</title>
+    <!-- <documentation at http://demos.jquerymobile.com/1.4.1/ > -->
+     <!-- <documentation at http://demos.jquerymobile.com/1.1.1/ > -->
+    
+
+    <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> -->
+    <link rel="stylesheet" href="/public/stylesheets/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="/public/stylesheets/index.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="/public/javascripts/index.js"></script>
+</head>
+
+<body>
+
+    <!-- Start of homepage -->
+    <div data-role="page"  id="home">
+            <!--  home page header -->
+            <div data-role="header" data-theme='b'>
+              <div display="block"><a href="#home">Home page</a>
+                <a href="#page1">Product Display Page</a>
+                <a href="#page2">Cart Page</a>
+                <a href="#page3">Purchase Page</a>
+                <a href="#page4">Previous Orders Page</a></div>
+                <h1>The Online Storefront</h1>
+            </div>
+            <!--  home page content -->
+            <div data-role="content" data-theme='e'>
+              <p style="text-align:center">Welcome to the store page! Please take a look at the recommended products below.</p>
+              <div id="recommended" style="text-align:center">recommended products go here</div>
+              <img margin-left="auto" margin-right="auto" id="recommendedImg" src="" alt="Product Image" style="width:200px;height:200px;">
+              <button id="btnRecommend" type="button">Show me a new product</button> 
+            </div>
+            <p style="text-align:center">You're welcome to check out the <a href="#page1">Products Page</a> to place an order for any of our products, 
+              or access our database of previous orders and delete them however you wish!</p>
+            <!--  home page footer -->
+            <div data-role="footer" data-theme='b'>
+              <h1>Copyright 2020 by Kyu Kim</h1>
+            </div>
+        </div>
+
+
+        <div data-role="page"  id="page1">
+            <!--  product display page header -->
+            <div data-role="header" data-theme='b'>
+              <div display="block"><a href="#home">Home page</a>
+                <a href="#page1">Product Display Page</a>
+                <a href="#page2">Cart Page</a>
+                <a href="#page3">Purchase Page</a>
+                <a href="#page4">Previous Orders Page</a></div>
+                <h1>The Online Storefront</h1>
+            </div>
+            <!--  product display page content -->
+            <div data-role="content" data-theme='e'>
+              <p>Product list page</p>
+              <p>You can add any product to your cart from here.</p>
+              <div class="productList" id="productName0"></div>
+              <img class="productList" id="productImg0" src="" alt="Product Image" style="width:100px;height:100px;">
+              <div class="productList" id="productPrice0"></div>
+              <button class="productList" id="btnCart0" type="button">Add to cart</button>
+              </br>
+              <div class="productList" id="productName1"></div>
+              <img class="productList" id="productImg1" src="" alt="Product Image" style="width:100px;height:100px;">
+              <div class="productList" id="productPrice1"></div>
+              <button class="productList" id="btnCart1" type="button">Add to cart</button>
+              </br>
+              <div class="productList" id="productName2"></div>
+              <img class="productList" id="productImg2" src="" alt="Product Image" style="width:100px;height:100px;">
+              <div class="productList" id="productPrice2"></div>
+              <button class="productList" id="btnCart2" type="button">Add to cart</button>
+            </br>
+              <a href="#page2">Take me to the Cart page</a>
+            </div>
+              
+            <!--  newaccount page footer -->
+            <div data-role="footer" data-theme='b'>
+              <h1>Copyright 2020 by Kyu Kim</h1>
+            </div>
+        </div>
+
+
+    <!-- Start of page2 -->
+    <div data-role="page"  id="page2">
+            <!--  page2 header -->
+            <div data-role="header" data-theme='b'>
+              <div display="block"><a href="#home">Home page</a>
+                <a href="#page1">Product Display Page</a>
+                <a href="#page2">Cart Page</a>
+                <a href="#page3">Purchase Page</a>
+                <a href="#page4">Previous Orders Page</a></div>
+                <h1>The Online Storefront</h1>
+            </div>
+            <!--  page2 page content -->
+            <div data-role="content" data-theme='e'>
+                <p>Cart page</p>
+                <p>Please review your order before purchasing! Add or subtract items from your cart as you need.</p>
+            </br>
+                <span id="stereoAmt"></span><span> Stereos</span>
+                <a href="tryit.asp-filename=tryjqmob_themes_buttons.html#" class="ui-btn ui-btn-inline" id="btnStereoMinus">-</a>
+                <a href="tryit.asp-filename=tryjqmob_themes_buttons.html#" class="ui-btn ui-btn-inline" id="btnStereoPlus">+</a></br>
+                <span id="speakerAmt"></span><span> Speakers</span>
+                <a href="tryit.asp-filename=tryjqmob_themes_buttons.html#" class="ui-btn ui-btn-inline" id="btnSpeakerMinus">-</a>
+                <a href="tryit.asp-filename=tryjqmob_themes_buttons.html#" class="ui-btn ui-btn-inline" id="btnSpeakerPlus">+</a></br>
+                <span id="remoteAmt"></span><span> Remotes</span>
+                <a href="tryit.asp-filename=tryjqmob_themes_buttons.html#" class="ui-btn ui-btn-inline" id="btnRemoteMinus">-</a>
+                <a href="tryit.asp-filename=tryjqmob_themes_buttons.html#" class="ui-btn ui-btn-inline" id="btnRemotePlus">+</a>
+          </br>
+        </br>
+                <a href="#page3">Take me to the purchase page!</a>
+            </div>
+
+              
+            <!-- footer -->
+            <div data-role="footer" data-theme='b'>
+              <h1>Copyright 2020 by Kyu Kim</h1>
+           </div>
+      </div>
+
+    <!-- Start of page 3 page -->
+    <div data-role="page"  id="page3">
+            <!--  page 3 page header -->
+            <div data-role="header" data-theme='b'>
+              <div display="block"><a href="#home">Home page</a>
+                <a href="#page1">Product Display Page</a>
+                <a href="#page2">Cart Page</a>
+                <a href="#page3">Purchase Page</a>
+                <a href="#page4">Previous Orders Page</a></div>
+                <h1>The Online Storefront</h1>
+            </div>
+            <!--  page 3 page content -->
+            <div data-role="content" data-theme='e'>
+                <p>Purchase page</p>
+
+                <p id="cartMessage">There's nothing in your cart! Please add something to it.</p>
+                <a href="tryit.asp-filename=tryjqmob_themes_buttons.html#" class="ui-btn ui-btn-inline" id="btnPurchase">Purchase items</a>
+                
+            </div>
+              
+            <!-- footer -->
+            <div data-role="footer" data-theme='b'>
+              <h1>Copyright 2020 by Kyu Kim</h1>
+            </div>
+    </div>
+
+        <!-- Start of page 4 page -->
+        <div data-role="page"  id="page4">
+          <!--  page 4 page header -->
+          <div data-role="header" data-theme='b'>
+              <div display="block"><a href="#home">Home page</a>
+                <a href="#page1">Product Display Page</a>
+                <a href="#page2">Cart Page</a>
+                <a href="#page3">Purchase Page</a>
+                <a href="#page4">Previous Orders Page</a></div>
+                <h1>The Online Storefront</h1>
+            </div>
+          <!--  page 4 page content -->
+          <div data-role="content" data-theme='e'>
+              <p>Previous Orders</p>
+
+              <ul id="myUl"></ul>
+              <label for="orders">Choose an order to delete:</label>
+
+                <select id="orders">
+                </select>
+              <button id="btnDeleteOrder">Delete</button>
+          </div>
+            
+          <!-- footer -->
+          <div data-role="footer" data-theme='b'>
+            <h1>Copyright 2020 by Kyu Kim</h1>
+          </div>
+  </div>
+
+</body>
+</html>
